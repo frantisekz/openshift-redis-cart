@@ -19,7 +19,7 @@ mkdir -p $binaries
 
 echo $(git rev-parse HEAD) > $binaries/.gitcommit
 for file in src/redis-cli src/redis-server; do
-cp -f $file $binaries
+  cp -f $file $binaries
 done
 
 popd
